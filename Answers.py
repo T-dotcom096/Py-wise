@@ -155,11 +155,10 @@ s.add(4)
 
 # 38
 t = (1, 2, 3)
-# t[0] = 9  # TypeError: tuples are immutable
 
 # 39
 v = 3.14
-print(type(v))  # <class 'float'>
+print(type(v)) 
 
 # 40
 c = 3 + 4j
@@ -179,7 +178,7 @@ upper_word = word.upper()
 
 # 44
 money = 100
-total = money + money * 0.075  # 7.5% tax
+total = money + money * 0.075  
 
 # 45
 age = "25"
@@ -211,7 +210,7 @@ x = 5
 x = x + 1
 x = x + 1
 x = x + 1
-print(x)  # 8
+print(x)  
 
 # 52
 score = 40
@@ -223,12 +222,11 @@ country_code = "NG"
 
 # 54
 binary = "1010"
-decimal = int(binary, 2)  # 10
+decimal = int(binary, 2)  
 
 # 55
 dec = 10
-bin_str = bin(dec)  # '0b1010'
-# without prefix: format(dec, "b")
+bin_str = bin(dec) 
 
 # 56
 a, b = 10, 20
@@ -252,24 +250,24 @@ keys_list = list(d.keys())
 
 # 61
 print(5 + 3)
-# print("5" + 3)  # TypeError: can't add str and int
+# print("5" + 3) 
 
 # 62
 age1, age2 = 30, 25
 print(age1 - age2)
 
 # 63
-print("hi" * 3)  # hihihi
+print("hi" * 3) 
 
 # 64
-print(10 / 3)   # 3.333... (true division)
-print(10 // 3)  # 3 (floor division)
+print(10 / 3)  
+print(10 // 3) 
 
 # 65
-print(25 % 4)  # 1
+print(25 % 4)  
 
 # 66
-print(2 ** 10)  # 1024
+print(2 ** 10)  
 
 # 67
 x = 10
@@ -277,9 +275,9 @@ x += 5
 
 # 68
 x = 10
-x -= 2   # 8
-x *= 3   # 24
-x /= 4   # 6.0
+x -= 2   
+x *= 3   
+x /= 4   
 
 # 69
 print(25 == 25)
@@ -292,13 +290,13 @@ print(5 > 3, 5 < 3)
 
 # 72
 x = 10
-print(5 < x < 15)  # True
+print(5 < x < 15)  
 
 # 73
 a = [1, 2]
 b = [1, 2]
-print(a == b)  # True (same value)
-print(a is b)  # False (different objects)
+print(a == b)  
+print(a is b)  
 
 # 74
 age, has_id = 20, True
@@ -317,39 +315,39 @@ print("a" in "apple")
 
 # 78
 d = {"name": "Ada"}
-print("name" in d)  # checks keys
+print("name" in d)  
 
 # 79
-print(10 & 12)  # 8
-print(10 | 12)  # 14
-print(10 ^ 12)  # 6
+print(10 & 12)  
+print(10 | 12)  
+print(10 ^ 12)  
 
 # 80
-print(8 << 1)  # 16
-print(8 >> 1)  # 4
+print(8 << 1)  
+print(8 >> 1)  
 
 # 81
-print(~5)  # -6 (~n == -(n+1))
+print(~5)  
 
-# 82 precedence: ** first, then *, then +
-print(2 + 3 * 4 ** 2)  # 2 + 3*16 = 50
+# 82 
+print(2 + 3 * 4 ** 2) 
 
 # 83
 n = 15
 print(n % 3 == 0)
 
 # 84
-print(-11 // 3)  # -4 (floors toward negative infinity)
+print(-11 // 3)  
 
 # 85
-print(-11 % 3)  # 1 (result takes sign of divisor)
+print(-11 % 3) 
 
 # 86
 a, b, c, d, e = 1, 2, 3, 4, 5
 print((a + b) * c / d - e)
 
 # 87
-print(0 or "hi" and [])  # [] -> "hi" and [] gives [], 0 or [] gives []
+print(0 or "hi" and [])
 
 # 88
 x = None
@@ -361,19 +359,19 @@ print("z" not in "apple")
 
 # 90
 r = 4 * 5
-print(r % 3)  # 20 % 3 = 2
+print(r % 3)  
 
 # 91
 x = 17
-x //= 5  # 3
-x %= 2   # 1
+x //= 5 
+x %= 2   
 
 # 92 compound interest
 P, r, n, t = 1000, 0.05, 1, 3
 amount = P * (1 + r / n) ** (n * t)
 
 # 93
-print("apple" < "banana")  # True (alphabetical)
+print("apple" < "banana")  
 
 # 94
 print([1, 2] + [3, 4])
@@ -396,11 +394,11 @@ bmi = weight / height ** 2
 
 # 99
 total = 135
-print(total // 60, total % 60)  # 2 hours 15 minutes
+print(total // 60, total % 60)  
 
 # 100
 n = 7
-print(n & 1 == 0)  # True if even (lowest bit is 0)
+print(n & 1 == 0) 
 
 # 101
 quantity, price = 3, 9.99
@@ -415,14 +413,14 @@ user, pw = "ada", "1234"
 print(bool(user) and bool(pw))
 
 # 104
-print(1234 % 10)  # 4
+print(1234 % 10)  
 
 # 105
-print(527 // 100)  # 5
+print(527 // 100)  
 
-# 106 swap digits of a 2-digit number
+# 106
 n = 47
-print((n % 10) * 10 + n // 10)  # 74
+print((n % 10) * 10 + n // 10)  
 
 # 107
 a, b, c = 4, 5, 6
@@ -434,7 +432,7 @@ print(a + b > c)
 
 # 109
 a, b = 5, 9
-print((a > b) * a + (a <= b) * b)  # 9
+print((a > b) * a + (a <= b) * b)  
 
 # 110
 P, r, t = 1000, 5, 2
@@ -458,28 +456,28 @@ print(0.5 * base * height)
 
 # 115
 cost, sell = 80, 100
-print(sell - cost)  # positive = profit, negative = loss
+print(sell - cost)  
 
 # 116
 s = "banana"
 print(len(s) > 5 and "a" in s)
 
 # 117
-q, r = divmod(17, 5)  # 3, 2
+q, r = divmod(17, 5) 
 
 # 118
-print(True + False * True)  # 1 + 0 = 1
+print(True + False * True) 
 
 # 119
-print(0 == False, 1 == True)  # True True
+print(0 == False, 1 == True)
 
 # 120
-print([] == False)  # False (list is not equal to False)
-print(bool([]))     # False (but it is falsy)
+print([] == False)
+print(bool([]))    
 
 # 121
-print((10 / 3) * 3)    # 10.0
-print((10 // 3) * 3)   # 9
+print((10 / 3) * 3)   
+print((10 // 3) * 3)   
 
 # 122
 n = 8
@@ -513,7 +511,7 @@ print(a % b == 0)
 
 # 129
 n = 4
-print(n ** 2 - n ** 3)  # -48
+print(n ** 2 - n ** 3) 
 
 # 130
 a, b, c, d = True, False, True, True
@@ -560,7 +558,7 @@ else: print(len(lst))
 
 # 138
 s = ""
-print("Empty" if not s else "Not empty")  # empty string is falsy
+print("Empty" if not s else "Not empty") 
 
 # 139
 a, b = 5, 9
@@ -607,11 +605,11 @@ print("Child" if age < 13 else "Teen" if age < 20 else "Adult")
 
 # 147
 x = 0
-print(x is None)   # False
-print(x == False)  # True (0 == False)
-print(x is False)  # False (0 is not the False object)
+print(x is None)  
+print(x == False)  
+print(x is False)  
 x = None
-print(x == False, x is None)  # False True
+print(x == False, x is None)  
 
 # 148
 is_member, price = True, 800
@@ -702,9 +700,9 @@ print("Pass" if all(m >= 40 for m in marks) else "Fail")
 age, dress = 22, "formal"
 print("Entry allowed" if age >= 18 and dress == "formal" else "Denied")
 
-# 165 XOR: one but not both
+# 165 
 n = 9
-print((n % 2 == 0) != (n % 3 == 0))  # 9: only by 3 -> True
+print((n % 2 == 0) != (n % 3 == 0)) 
 
 # 166
 ch = "#"
@@ -751,7 +749,7 @@ print(isinstance(x, int), isinstance(x, float))
 
 # 174
 lst = [1, 2, 2, 3]
-print(len(lst) != len(set(lst)))  # True = has duplicates
+print(len(lst) != len(set(lst)))  
 
 # 175
 print("12345".isdigit())
@@ -876,7 +874,7 @@ a, b = -3, -7
 print((a > 0 and b > 0) or (a < 0 and b < 0))
 
 # 201
-print("Hello World".istitle())  # True
+print("Hello World".istitle()) 
 
 # 202
 def hello():
@@ -901,7 +899,7 @@ welcome("Ada")
 
 # 206
 def rect(l, w):
-    return l * w, 2 * (l + w)  # area, perimeter
+    return l * w, 2 * (l + w)
 area, perimeter = rect(5, 3)
 
 # 207
@@ -915,12 +913,12 @@ def show(**kwargs):
         print(k, v)
 show(name="Ada", age=20)
 
-# 209 bug: the default list is created once and shared between calls
+# 209 
 def add_item(item, lst=[]):
     lst.append(item)
     return lst
-print(add_item(1))  # [1]
-print(add_item(2))  # [1, 2] -> surprise!
+print(add_item(1))  
+print(add_item(2))  
 # fix:
 def add_item_fixed(item, lst=None):
     if lst is None:
@@ -960,15 +958,15 @@ def multiplier(n):
         return x * n
     return times
 double = multiplier(2)
-print(double(5))  # 10
+print(double(5))  
 
 # 215
 def change(num, lst):
-    num += 1        # int is immutable: caller's value unchanged
-    lst.append(99)  # list is mutable: caller's list changes
+    num += 1        
+    lst.append(99)  
 n, l = 1, [1]
 change(n, l)
-print(n, l)  # 1 [1, 99]
+print(n, l)  
 
 # 216
 def is_prime(n):
@@ -990,12 +988,12 @@ def check(n):
         return "Negative not allowed"
     return "OK"
 
-# 219 the parameter shadows the global
+# 219 
 x = 10
 def show_x(x):
-    print(x)  # uses the argument, not the global
-show_x(5)  # 5
-print(x)   # 10
+    print(x) 
+show_x(5)  
+print(x)   
 
 # 220
 def length_check(s):
@@ -1063,7 +1061,7 @@ def is_armstrong(n):
     s = str(n)
     return sum(int(d) ** len(s) for d in s) == n
 
-# 233 power without **
+# 233 
 def power(base, exp):
     result = 1
     for _ in range(exp):
@@ -1080,7 +1078,7 @@ def largest(lst):
 
 # 235
 def remove_dupes(lst):
-    return list(dict.fromkeys(lst))  # keeps order
+    return list(dict.fromkeys(lst))  
 
 # 236
 def merge(a, b):
@@ -1098,7 +1096,7 @@ def count_words(sentence):
 def cap_words(s):
     return " ".join(w.capitalize() for w in s.split())
 
-# 240 function inside another
+# 240 
 def check_even(n):
     def is_even(x):
         return x % 2 == 0
@@ -1213,7 +1211,7 @@ print(first + " " + last)
 
 # 263
 name, age = "Ada", 20
-print(name + " is " + str(age))  # age must be converted with str()
+print(name + " is " + str(age))  
 
 # 264
 print("word " * 10)
@@ -1231,21 +1229,20 @@ print(" ".join(words))
 
 # 268
 n = 5
-print(f"Number: {n}")        # f-string handles the conversion
-print("Number: " + str(n))   # + needs str()
+print(f"Number: {n}")     
+print("Number: " + str(n))   
 
 # 269
-print("Hello" + "")  # Hello
+print("Hello" + "")  
 
 # 270
 val = None
-# print("Value: " + val)  # TypeError: can't concat str and None
-print("Value: " + str(val))    # fix: Value: None
-print("Value: " + (val or ""))  # or treat None as empty
+print("Value: " + str(val))    
+print("Value: " + (val or ""))  
 
 # 271
 nums = [1, 2, 3]
-print(",".join(map(str, nums)))  # 1,2,3
+print(",".join(map(str, nums)))  
 
 # 272
 flag = True
@@ -1253,24 +1250,24 @@ print("Flag: " + str(flag))
 print(f"Flag: {flag}")
 
 # 273
-print(f"{2+3}=5")  # 5=5
+print(f"{2+3}=5") 
 
 # 274
 s = "Hello"
-print(s + s[::-1])  # HelloolleH
+print(s + s[::-1])
 
-# 275 implicit concat (literals only)
-print("hello" "world")  # helloworld
+# 275 
+print("hello" "world")  
 
 # 276
 print("Hello".__add__(" World"))
 
 # 277
 words = ["I", "love", "Python"]
-print(" ".join(words))       # join: fast and clean
+print(" ".join(words))       
 result = ""
 for w in words:
-    result += w + " "        # loop with +: slower for big lists
+    result += w + " "        
 print(result.strip())
 
 # 278
@@ -1280,8 +1277,8 @@ Line two"""
 
 # 279
 import os
-print(os.path.join("home", "user", "docs"))  # joins with the OS separator
-print("/".join(["home", "user", "docs"]))    # home/user/docs
+print(os.path.join("home", "user", "docs"))  
+print("/".join(["home", "user", "docs"]))    
 
 # 280
 name, domain = "ada", "mail.com"
@@ -1289,11 +1286,11 @@ print(name + "@" + domain)
 
 # 281
 price = 5.5
-print(f"Price: {price:.2f}")  # Price: 5.50
+print(f"Price: {price:.2f}")  
 
 # 282
 first, last = "Ada", "Lovelace"
-print(first[0] + last[0])  # AL
+print(first[0] + last[0])  
 
 # 283
 nums = [1, 2, 3]
@@ -1304,10 +1301,10 @@ combined = "Hello" + "World"
 print("World" in combined)
 
 # 285
-print("Wow" + "!!!" * 3)  # Wow!!!!!!
+print("Wow" + "!!!" * 3)  
 
 # 286
-print("-".join(["a", "b", "c"]))  # a-b-c
+print("-".join(["a", "b", "c"]))  
 
 # 287
 print("Line1" + "\n" + "Line2")
@@ -1321,7 +1318,7 @@ print(len(c))
 
 # 290
 s = "Hi"
-print(f"{s}{s}")  # HiHi
+print(f"{s}{s}") 
 
 # 291
 name = input("Name: ")
@@ -1337,11 +1334,11 @@ print(s.replace("World", "Python"))
 
 # 294
 s = "abc" + "def" + "ghi"
-print(s[2:6])  # cdef
+print(s[2:6])  
 
 # 295
-s = "5" + "3"   # "53"
-print(int(s) * 2)  # 106
+s = "5" + "3"   
+print(int(s) * 2)  
 
 # 296
 items = ["a", "b", "c"]
@@ -1351,18 +1348,18 @@ print("|".join(items))
 
 # 297
 a, b = True, False
-print(str(a) + str(b))  # TrueFalse
+print(str(a) + str(b)) 
 
 # 298
 print("Name" + "\t" + "Age")
 
 # 299 three methods
 name, age = "Ada", 20
-print("I am " + name + " and I am " + str(age) + " years old")  # 1: +
-print(f"I am {name} and I am {age} years old")                  # 2: f-string
-print("I am {} and I am {} years old".format(name, age))        # 3: format()
+print("I am " + name + " and I am " + str(age) + " years old") 
+print(f"I am {name} and I am {age} years old")                  
+print("I am {} and I am {} years old".format(name, age))        
 
 # 300
 a, b = "ab", "ba"
 c = a + b
-print(c == c[::-1])  # abba -> True
+print(c == c[::-1])  
